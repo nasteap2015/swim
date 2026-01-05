@@ -2,127 +2,618 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/project-group-01-yachtjet/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-DvPDDfy5.css">
+    <meta
+      name="description"
+      content="Experience the freedom and luxury of yachting on the open seas. Choose from our top-of-the-line yachts and embark on an unforgettable journey surrounded by breathtaking views and state-of-the-art amenities."
+    />
+    <meta
+      name="keywords"
+      content="yachtjet, yacth, Luxury Yacht, Yacht Rental, open seas, journey, yacht journey, adventure, dream yacht, sail, ARROW, BENETTI OASIS 40M BO122, BELLE ANNA, Admiral, Benetti, ISA, water skiing, Fishing, Sightseeing tours, island tour, tour, yachtjet reviews, vacation, date ideas, holiday, weekend, romantic getaway, wedding ideas"
+    />
+    <title>YachtJet</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script type="module" crossorigin src="/project-group-01-yachtjet/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/project-group-01-yachtjet/assets/index-9d7d40f8.css">
   </head>
-  <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/vanilla-app-template/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+  <body id="our-body">
+    <header class="head-section">
+  <div class="head-pin container">
+    <div class="header-wrapper">
+      <nav class="head-nav-box">
+        <a href="./index.html" class="nav-logo">SwimClub</a>
+        <ul id="nvlst" class="nav-list list">
+          <li class="nav-list-item">
+            <a
+              class="nav-list-link nav-list-link-current current"
+              href="#about"
+              >O mnie</a
+            >
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="#offer">Oferta</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-list-link" href="#contact">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="social-media-list list">
+        <li class="social-media-item">
+          <a
+            href="https://www.instagram.com/goitclub/"
+            class="social-media-icon-link"
+            target="_blank"
+          >
+            <svg
+              class="social-media-icon"
+              width="20"
+              height="20"
+              aria-label="Instagram link"
+            >
+              <use href="/project-group-01-yachtjet/assets/icons-02df2db2.svg#icon-instagram"></use>
+            </svg>
+          </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="social-media-item">
+          <a
+            href="https://www.youtube.com/c/GoIT"
+            class="social-media-icon-link"
+            target="_blank"
+          >
+            <svg
+              class="social-media-icon"
+              height="20"
+              width="20"
+              aria-label="YouTube link"
+            >
+              <use href="/project-group-01-yachtjet/assets/icons-02df2db2.svg#icon-you_tube"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a
+            href="https://www.facebook.com/goITclub/"
+            class="social-media-icon-link"
+            target="_blank"
+          >
+            <svg
+              class="social-media-icon"
+              height="20"
+              width="20"
+              aria-label="Facebook link"
+            >
+              <use href="/project-group-01-yachtjet/assets/icons-02df2db2.svg#icon-facebook"></use>
+            </svg>
+          </a>
         </li>
       </ul>
-    </nav>
+      <button class="head-burger-button" id="openModalBtn" type="button">
+        <svg
+          class="head-burger-button-icon"
+          height="28"
+          width="28"
+          aria-label="Open navigation bar"
+        >
+          <use href="/project-group-01-yachtjet/assets/icons-02df2db2.svg#icon-burger_menu"></use>
+        </svg>
+      </button>
+      <button
+        type="button"
+        class="mobile-menu-modal-close-button hidden-button"
+        id="closeModalBtn"
+      >
+        <svg
+          class="mobile-menu-modal-close-button-icon"
+          width="16"
+          height="16"
+          aria-label="close button"
+        >
+          <use href="/project-group-01-yachtjet/assets/icons-02df2db2.svg#icon-close_btn"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
 
-
     <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
+      <section class="hero hero-page">
   <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/vanilla-app-template/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
+    <h1 class="hero-title">
+      Szkoła pływania SwimClub
     </h1>
+    <p class="hero-text">
+      Instruktor pływania Warszawa i Pruszków. Nauka i doskonalenie pływania dla dzieci i doroslych.
+    </p>
+    <a data-modal-open class="hero-link" href="#contact">Kontakt</a>
   </div>
 </section>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
+      <section class="about section" id="about">
+  <div class="container about-us-container">
+    <div class="about-us-card-wrapper">
+      <div class="poster">
+        <h2 class="poster-title">
+          O mnie
+        </h2>
+        <div class="poster-paragraphs">
+          <p class="poster-description">
+            Jestem certyfikowanym instruktorem pływania, a pływanie to moja pasja od ponad 25 lat. Przez wiele lat trenowałem
+            zawodowo, zdobywając doświadczenie, które dziś wykorzystuję w pracy z kursantami. Pomagam oswoić się z wodą, poprawić
+            technikę i osiągać zaplanowane cele sportowe. Uczę w prosty, spokojny i skuteczny sposób, dbając o komfort,
+            bezpieczeństwo oraz dobrą atmosferę na zajęciach.
+          </p>
+        </div>
+      </div>
+      <picture class="picture-about-us">
+        <source
+          srcset="/project-group-01-yachtjet/assets/about_us-1e016a8c.jpg 1x, /project-group-01-yachtjet/assets/about_us@2x-05dcc04e.jpg 2x"
+          media="(min-width: 1440px)"
+          width="1340"
+          height="470"
+        />
+        <source
+          srcset="/project-group-01-yachtjet/assets/about_us-abdfd6ce.jpg 1x, /project-group-01-yachtjet/assets/about_us@2x-e76ee0b1.jpg 2x"
+          media="(min-width: 1280px)"
+          width="1180"
+          height="470"
+        />
+        <source
+          srcset="/project-group-01-yachtjet/assets/about_us-ed8061ae.jpg 1x, /project-group-01-yachtjet/assets/about_us@2x-5fc65ff9.jpg 2x"
+          media="(min-width: 768px)"
+          width="704"
+          height="470"
+        />
+        <source
+          srcset="/project-group-01-yachtjet/assets/about_us-1f2e749c.jpg 1x, /project-group-01-yachtjet/assets/about_us@2x-3b996751.jpg 2x"
+          media="(max-width: 767px)"
+          width="335"
+          height="395"
+        />
+        <img
+          src="/project-group-01-yachtjet/assets/about_us-1f2e749c.jpg"
+          alt="yacht sails in night sea"
+          class="img-about-us"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+      <section class="section" id="offer">
+  <div class="container our-yachts">
+    <h2 class="our-yachts-title">
+      Oferta
+    </h2>
+    <ul class="yacht-cards-container list">
+      <li class="yacht-card">
+        <picture>
+          <source
+            srcset="/project-group-01-yachtjet/assets/child-7804bf29.png "
+            media="(min-width:1440px)"
+            width="360"
+            height="268"
+          />
+          <source
+            srcset="/project-group-01-yachtjet/assets/child-7804bf29.png "
+            media="(min-width:1280px)"
+            width="345"
+            height="268"
+          />
+          <source
+            srcset="/project-group-01-yachtjet/assets/child-7804bf29.png "
+            media="(min-width:768px)"
+            width="304"
+            height="268"
+          />
+          <source
+            srcset="/project-group-01-yachtjet/assets/child-7804bf29.png "
+            media="(max-width:767px)"
+            width="302"
+            height="240"
+          />
+          <img
+            class="yacht-card-image"
+            src="/project-group-01-yachtjet/assets/child-7804bf29.png"
+            alt="Arrow Yacht"
+          />
+        </picture>
+        <div class="yacht-card-content">
+          <div class="yacht-card-title">
+            <h3 class="yacht-card-name">Dla dzieci</h3>
+          </div>
+          <p class="yacht-card-yacht-category">Bezstresowa nauka pływania od podstaw oraz doskonalenie pływania dla dzieci.</p>
+        </div>
+      </li>
+      <li class="yacht-card">
+        <picture>
+          <source srcset="/project-group-01-yachtjet/assets/adult-276504c3.png "
+                  media="(min-width:1440px)" width="360" height="268" />
+          <source srcset="/project-group-01-yachtjet/assets/adult-276504c3.png "
+                  media="(min-width:1280px)" width="345" height="268" />
+          <source srcset="/project-group-01-yachtjet/assets/adult-276504c3.png "
+                    media="(min-width:768px)" width="304" height="268" />
+          <source srcset="/project-group-01-yachtjet/assets/adult-276504c3.png "
+                  media="(max-width:767px)" width="302" height="240" />
+          <img class="yacht-card-image" src="/project-group-01-yachtjet/assets/adult-276504c3.png" alt="Arrow Yacht" />
+        </picture>
+        <div class="yacht-card-content">
+          <div class="yacht-card-title">
+            <h3 class="yacht-card-name">Dla dorosłych</h3>
+          </div>
+          <p class="yacht-card-yacht-category">Nigdy nie jest za późno, aby nauczyć się pływać lub poprawić efektywność pływania.
+          </p>
+        </div>
+      </li>
+      <li class="yacht-card">
+        <picture>
+          <source srcset="/project-group-01-yachtjet/assets/pro-88b98e6d.jpg " media="(min-width:1440px)" width="360" height="268" />
+          <source srcset="/project-group-01-yachtjet/assets/pro-88b98e6d.jpg " media="(min-width:1280px)" width="345" height="268" />
+          <source srcset="/project-group-01-yachtjet/assets/pro-88b98e6d.jpg " media="(min-width:768px)" width="304" height="268" />
+          <source srcset="/project-group-01-yachtjet/assets/pro-88b98e6d.jpg " media="(max-width:767px)" width="302" height="240" />
+          <img class="yacht-card-image" src="/project-group-01-yachtjet/assets/pro-88b98e6d.jpg" alt="Arrow Yacht" />
+        </picture>
+        <div class="yacht-card-content">
+          <div class="yacht-card-title">
+            <h3 class="yacht-card-name">Treningi kondycyjne i przygotowanie do celów</h3>
+          </div>
+          <p class="yacht-card-yacht-category">Indywidualne treningi w wodzie poprawiające kondycję oraz przygotowujące do zawodów i testów sprawnościowych.
+          </p>
+        </div>
+      </li>
+      <li class="yacht-card">
+        <picture>
+          <source srcset="/project-group-01-yachtjet/assets/company-fe9aa85a.png " media="(min-width:1440px)" width="360" height="268" />
+          <source srcset="/project-group-01-yachtjet/assets/company-fe9aa85a.png " media="(min-width:1280px)" width="345" height="268" />
+          <source srcset="/project-group-01-yachtjet/assets/company-fe9aa85a.png " media="(min-width:768px)" width="304" height="268" />
+          <source srcset="/project-group-01-yachtjet/assets/company-fe9aa85a.png " media="(max-width:767px)" width="302" height="240" />
+          <img class="yacht-card-image" src="/project-group-01-yachtjet/assets/company-fe9aa85a.png" alt="Arrow Yacht" />
+        </picture>
+        <div class="yacht-card-content">
+          <div class="yacht-card-title">
+            <h3 class="yacht-card-name">Treningi dla firm</h3>
+          </div>
+          <p class="yacht-card-yacht-category">Zajęcia pływackie dla firm jako forma integracji, wspólnego treningu lub przygotowania do zawodów.
+          </p>
+        </div>
+      </li>
+    </ul>
+    <a class="rent-yacht-link link" href="#contact">Kontakt</a>
+  </div>
+</section>
+
+      <section class="advantages-section section">
+  <div class="advantages-container container">
+    <h2 class="advantages-heading visually-hidden">Jak to wygląda?</h2>
+    <div class="advantages-list-wrapper">
+      <ol class="advantages-list list">
+        <li class="advantages-list-item">
+          <p class="advantages-list-item-count">Nauka pływania</p>
+          <p
+            class="advantages-list-item-description advantages-list-first-item-description"
+          >
+            Podczas lekcji pracujemy nad:
+            oswojeniem z wodą
+            nauką oddychania
+            prawidłową pozycją ciała
+            pierwszymi ruchami pływackimi
+            (Podczas lekcji skupiamy się na stopniowym oswajaniu z wodą, nauce prawidłowego oddychania oraz budowaniu poprawnej
+            pozycji ciała. Krok po kroku wprowadzamy pierwsze ruchy pływackie, dbając o komfort, bezpieczeństwo i spokojne tempo
+            nauki.)
+          </p>
+        </li>
+        <li class="advantages-list-item">
+          <p class="advantages-list-item-count">Doskonalenie pływania</p>
+          <p
+            class="advantages-list-item-description advantages-list-second-item-description"
+          >
+            Skupiamy się na:
+            efektywności i ekonomii ruchu
+            koordynacji i oddechu
+            stylach pływania
+            (Zajęcia doskonalące są przeznaczone dla osób, które już pływają i chcą poprawić swoją technikę. Pracujemy nad
+            efektywnością i ekonomią ruchu, koordynacją oraz oddychaniem, a także nad doskonaleniem poszczególnych stylów
+            pływackich.)
+          </p>
+        </li>
+        <li class="advantages-list-item">
+          <p class="advantages-list-item-count">Treningi</p>
+          <p
+            class="advantages-list-item-description advantages-list-third-item-description"
+          >
+            Podczas treningów pracujemy nad:
+            techniką pływania w warunkach treningowych
+            tempem i kontrolą intensywności
+            wytrzymałością i kondycją w wodzie
+            przygotowaniem do zawodów i testów sprawnościowych
+            (Treningi pływackie skierowane są do osób, które chcą trenować bardziej świadomie lub przygotować się do konkretnych
+            celów sportowych. Skupiamy się na technice pływania w warunkach treningowych, kontroli tempa i intensywności, budowaniu
+            wytrzymałości oraz poprawie ogólnej kondycji. W zależności od potrzeb treningi mogą być rozszerzone o zajęcia
+            uzupełniające na lądzie, takie jak bieganie. Zajęcia mogą obejmować również przygotowanie do zawodów i testów
+            sprawnościowych.
+            II Treningi pływackie są przeznaczone dla osób, które chcą trenować świadomie lub przygotować się do celów sportowych.
+            Skupiamy się na technice, tempie, wytrzymałości i poprawie kondycji. W zależności od potrzeb treningi mogą być
+            uzupełnione o zajęcia na lądzie, takie jak bieganie oraz przygotowanie do zawodów i testów sprawnościowych.)
+          </p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+      <section class="rent-section section" id="price">
+    <div class="container rent-container">
+    <div class="rent-content">
+        <h2 class="rent-title">Cennik</h2>
+        <table border="1" cellpadding="10" cellspacing="0">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Pruszków SmS</th>
+              <th>Warszawa WUM</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Zajęcia indywidualne</td>
+              <td>120</td>
+              <td>130</td>
+            </tr>
+            <tr>
+              <td>Zajęcia grupowe 2 osobowe</td>
+              <td>80</td>
+              <td>90</td>
+            </tr>
+            <tr>
+              <td>Zajęcia grupowe 3 osobowe</td>
+              <td>70</td>
+              <td>80</td>
+            </tr>
+            <tr>
+              <td>Zajęcia grupowe 4 osobowe</td>
+              <td>60</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Pakiet miesięczny</td>
+              <td></td>
+              <td>-10%</td>
+            </tr>
+            <tr>
+              <td>Treningi dla firm</td>
+              <td colspan="2">skontaktuj się ze mną</td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                Cena dotyczy 60 minut, czas liczony jest od momentu wejścia
+                na strefę płatną (bramki) do wyjścia.<br><br>
+                Cena nie obejmuje wstępu na basen
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <div>
+        <picture >
+            <source
+            srcset="/project-group-01-yachtjet/assets/price-e6d6f165.jpg "
+                    media="(min-width:1440px)"
+                     width="768"/>
+
+            <source
+            srcset="/project-group-01-yachtjet/assets/price-e6d6f165.jpg "
+            media="(min-width:1280px)"
+             width="658"
+            />
+
+            <source
+            srcset="/project-group-01-yachtjet/assets/price-e6d6f165.jpg "
+            media="(min-width:768px)"
+            width="768"
+          />
+
+
+            <source
+            srcset="/project-group-01-yachtjet/assets/price-e6d6f165.jpg "
+            media="(max-width:767px)"
+            width="335"
+          />
+            <img class="rent-img" src="/project-group-01-yachtjet/assets/price-e6d6f165.jpg"
+            alt="Yacht"/>
+        </picture>
+    </div>
+</div>
+</section>
+      <section class="reviews-section section" id="contact">
+  <div class="reviews-container container">
+    <h2 class="reviews-title">
+      Kontakt
+    </h2>
+            <div class="card">
+          <ul>
+            <li>
+              Telefon:
+              <a href="tel:+48123456789">+48 729 548 862</a>
+            </li>
+
+            <li>
+              Email:
+              <a href="mailto:zosymigor@gmail.com">
+                zosymigor@gmail.com
+              </a>
+            </li>
+
+            <li>
+              Messenger:
+              <a href="https://m.me/twojprofil" target="_blank" rel="noopener noreferrer">
+                Napisz do mnie na Messengerze
+              </a>
+            </li>
+          </ul>
+        </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="main-footer section">
+  <div class="contain container">
+    <div class="footer-content-wrapper">
+      <div class="nav-social-wrapper">
+        <nav class="navigator">
+          <a class="logo-foot" href="./index.html">SwimClub</a>
+          <ul class="footer-nav list">
+            <li class="nav-list-item">
+              <a href="#about" class="nav-link-footer">O mnie</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#offer" class="nav-link-footer">Oferta</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#contact" class="nav-link-footer">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="foot-social-list list">
+          <li class="foot-social-list-item">
+            <a
+              href="https://www.instagram.com/goitclub/"
+              class="foot-social-links"
+              target="_blank"
+            >
+              <svg class="footer-icon" width="20" height="20">
+                <use href="/project-group-01-yachtjet/assets/icons-02df2db2.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="foot-social-list-item">
+            <a
+              href="https://www.youtube.com/c/GoIT"
+              class="foot-social-links"
+              target="_blank"
+            >
+              <svg class="footer-icon" width="20" height="20">
+                <use href="/project-group-01-yachtjet/assets/icons-02df2db2.svg#icon-you_tube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="foot-social-list-item">
+            <a
+              href="https://www.facebook.com/goITclub/"
+              class="foot-social-links"
+              target="_blank"
+            >
+              <svg class="footer-icon" width="20" height="20">
+                <use href="/project-group-01-yachtjet/assets/icons-02df2db2.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <p class="text-footer">
+        Od pierwszego zanurzenia do pełnej swobody w wodzie.
+      </p>
+      <ul class="footer-links-list list">
+        <li class="footer-links-list-item">
+          <a href="#" class="footer-links">2026. SwimClub Igor Zosym </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <div class="modal-box-for-mobile-menu" id="myModal">
+  <div class="container modal-container">
+    <nav class="mobile-menu-nav">
+      <ul class="mobile-menu-nav-list list">
+        <li class="mobile-menu-nav-item">
+          <a
+            href="#about"
+            class="mobile-menu-nav-link current"
+            id="nav-link-1"
+            >O mnie</a
+          >
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a href="#our-yachts" class="mobile-menu-nav-link" id="nav-link-2"
+            >Oferta</a
+          >
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a href="#reviews" class="mobile-menu-nav-link" id="nav-link-3"
+            >Kontakt</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <ul class="mobile-menu-socials-list list">
+      <li class="mobile-menu-socials-item">
         <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
+          href="https://www.instagram.com/goitclub/"
+          class="mobile-menu-socials-link"
           target="_blank"
-          rel="noopener noreferrer"
         >
-          HTML Inject
+          <svg
+            class="socials-icon"
+            width="20"
+            height="20"
+            aria-label="instagram button"
+          >
+            <use href="/project-group-01-yachtjet/assets/icons-02df2db2.svg#icon-instagram"></use>
+          </svg>
         </a>
       </li>
-      <li class="badges-item">
+      <li class="mobile-menu-socials-item">
         <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
+          href="https://www.youtube.com/c/GoIT"
+          class="mobile-menu-socials-link"
           target="_blank"
-          rel="noopener noreferrer"
         >
-          Full Reload
+          <svg
+            class="socials-icon"
+            width="20"
+            height="20"
+            aria-label="youtube button"
+          >
+            <use href="/project-group-01-yachtjet/assets/icons-02df2db2.svg#icon-you_tube"></use>
+          </svg>
         </a>
       </li>
-      <li class="badges-item">
+      <li class="mobile-menu-socials-item">
         <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
+          href="https://www.facebook.com/goITclub/"
+          class="mobile-menu-socials-link"
           target="_blank"
-          rel="noopener noreferrer"
         >
-          Sort Media Queries
+          <svg
+            class="socials-icon"
+            width="20"
+            height="20"
+            aria-label="facebook icon"
+          >
+            <use href="/project-group-01-yachtjet/assets/icons-02df2db2.svg#icon-facebook"></use>
+          </svg>
         </a>
       </li>
     </ul>
   </div>
-</article>
-
-    </main>
-
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
-</footer>
+</div>
 
 
+    <!-- Loads the specified .html file -->
+
+    
   </body>
 </html>
