@@ -4,20 +4,42 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <meta
+      name="description"
+      content="Experience the freedom and luxury of yachting on the open seas. Choose from our top-of-the-line yachts and embark on an unforgettable journey surrounded by breathtaking views and state-of-the-art amenities."
+    />
+    <meta
+      name="keywords"
+      content="yachtjet, yacth, Luxury Yacht, Yacht Rental, open seas, journey, yacht journey, adventure, dream yacht, sail, ARROW, BENETTI OASIS 40M BO122, BELLE ANNA, Admiral, Benetti, ISA, water skiing, Fishing, Sightseeing tours, island tour, tour, yachtjet reviews, vacation, date ideas, holiday, weekend, romantic getaway, wedding ideas"
+    />
+    <title>YachtJet</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
-
+  <body id="our-body">
+    <load src="partials/header.html" />
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+      <load src="partials/hero.html" />
+      <load src="partials/about-us.html" />
+      <load src="partials/our-yachts.html" />
+      <load src="partials/advantages.html" />
+      <load src="partials/rent-a-yacht.html" />
+      <load src="partials/reviews.html" />
     </main>
+    <load src="partials/footer.html" />
+    <load src="partials/modal.html" />
 
-    <load src="./partials/footer.html" />
+    <!-- Loads the specified .html file -->
 
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
