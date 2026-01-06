@@ -1,225 +1,105 @@
-.header{
-  align-items: center;
-}
-
-.header-wrapper {
-  position: fixed;
-  top: 20px;
-  max-width: 335px;
-  min-width: 335px;
-  /* dokładna szerokość dla pewnego centrowania */
+.header-wrapper{
+  width: 335px;
   height: 42px;
-  padding: 12px 20px 13px 20px;
+  padding: 10px 20px 11px 20px;
   border-radius: 8px;
   border: 1px solid #fbfbfb;
   background-color: #fbfbfb;
   display: flex;
-  justify-content: space-between;
-  /* elementy dzieci po bokach */
-  align-items: center;
-  z-index: 99999999999;
-  box-sizing: border-box;
-  /* uwzględnia padding w szerokości */
+  flex-direction: row;
 }
 
 .nav-logo {
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: -0.03em;
-    color: #1B414B;
-    padding-top: 12px;
-    padding-bottom: 13px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: #1B414B;
 }
 
-/* =============Списки */
-
-.nav-list,
 .social-media-list {
-    display: none;
+  display: none;
 }
 
-
-/* Мобільна версія============= */
-
-
-
-
-/* ===========Бургер */
-
-.head-burger-button,
-.mobile-menu-modal-close-button {
-    display: none;
+.head-nav-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 21px;
 }
 
-
-
-@media screen and (max-width: 767px) {
-
-
-    .head-burger-button {
-        display: flex;
-        background-color: transparent;
-        border: none;
-        position: absolute;
-        padding: 0;
-        right: 20px;
-        line-height: 0;
-    }
-
-    .head-burger-button-icon {
-        stroke: #1B414B;
-    }
-
-    /* ===========Крестик */
-
-    .mobile-menu-modal-close-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 28px;
-        height: 28px;
-        padding: 0;
-        line-height: 0;
-        background-color: transparent;
-        border: none;
-        position: absolute;
-        right: 20px;
-    }
-
-    /* ===========Кнопки */
-
-
+.nav-list{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
 }
 
-
-
-/* Планшетна версія=============== */
-
-@media screen and (min-width: 768px) {
-
-    .header-wrapper {
-        max-width: 704px;
-        height: 48px;
-        top: 32px;
-        padding-left: 28px;
-        padding-right: 28px;
-    }
-
-    /* Нав */
-
-    .head-nav-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .nav-logo {
-        margin-right: 109px;
-    }
-
-    .nav-logo {
-        font-size: 20px;
-        padding-bottom: 12px;
-    }
-
-    .nav-list {
-        display: flex;
-        gap: 4px;
-    }
-
-    .nav-list-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-width: 91px;
-        height: 40px;
-        border-radius: 8px;
-        background-color: rgba(27, 65, 75, 0.50);
-        font-size: 9px;
-        line-height: 1.3;
-        text-transform: uppercase;
-        transition: background-color 250ms linear;
-        padding: 4px 0;
-    }
-
-    .nav-list-link.current {
-        background-color: #1B414B;
-    }
-
-
-    /* Соцмережі */
-
-    .social-media-list {
-        display: flex;
-        gap: 8px;
-    }
-
-    .social-media-item {
-        width: 24px;
-        height: 24px;
-    }
-
-    .social-media-icon-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        fill: #1B414B;
-        transition: fill 250ms linear;
-    }
-
-    .social-media-icon-link:active {
-        fill: #062730;
-    }
-
-    /* Бургер====== */
-
-    .head-burger-button {
-        display: none;
-    }
+.nav-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 21px;
+  border-radius: 3px;
+  background-color: rgba(27, 65, 75, 0.50);
+  font-size: 9px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  transition: background-color 250ms linear;
+  padding: 4px 0;
 }
 
-@media screen and (min-width: 1280px) {
-
-    .header-wrapper {
-        max-width: 1080px;
-        left: 100px;
-        right: 100px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .nav-logo {
-        margin-right: 296px;
-    }
-
-    .nav-list-link:hover:not(.nav-list-link.current),
-    .nav-list-link:focus:not(.nav-list-link.current) {
-        background-color: rgba(27, 65, 75, 0.80);
-    }
-
-    .nav-list-link.current:hover {
-        background-color: #062730;
-    }
-
-    .social-media-icon-link:hover,
-    .social-media-icon-link:focus {
-        fill: #062730;
-    }
-
+.nav-list-link:hover {
+  background-color: #1B414B;
 }
 
-
-
-@media screen and (min-width: 1440px) {
-
-    .nav-logo {
-        margin-right: 375px;
-    }
-
-    .header-wrapper {
-        max-width: 1240px;
-    }
+.header.container{
+  position: relative;
+  margin-bottom: -42px;
+  z-index: 999999;
 }
+
+@media screen and (min-width: 768px){
+  .header.container{
+    padding: 0;
+    margin-bottom: -48px;
+  }
+
+  .header-wrapper {
+      width: 704px;
+      height: 48px;
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+
+  .nav-logo {
+    font-size: 20px;
+  }
+
+  .head-nav-box{
+    gap: 126px;
+  }
+
+  .nav-list-link{
+    width: 91px;
+    height: 27px;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  .header-wrapper {
+    width: 1080px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .head-nav-box {
+    gap: 312px;
+  }
+
+}
+/*.social-media-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
