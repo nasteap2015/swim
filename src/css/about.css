@@ -42,8 +42,13 @@
    }
 
    .about-text-wrapper{
-    align-items: center;
     justify-content: center;
    }
+
+    .img-wrapper{
+      height: 450px;
+      overflow: hidden;
+      border-radius: 16px;
+    }
 
   }
