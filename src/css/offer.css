@@ -29,6 +29,10 @@
   display: none;
 }
 
+.offer-text{
+  text-align: justify;
+}
+
 .contact-link{
   display: flex;
   justify-content: center;

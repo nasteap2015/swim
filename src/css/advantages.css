@@ -17,6 +17,7 @@
 
 .advantages-list-item-description{
   margin-bottom: 24px;
+  text-align: justify;
 }
 
 @media screen and (min-width: 768px){
