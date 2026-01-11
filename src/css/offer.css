@@ -75,11 +75,15 @@
   }
 
   .offer-card-list{
-    flex-direction: column;
-  }
+    gap:24px;
+      }
 
   .offer-card{
-    width: 1180px;
+    width: 578px;
+    height: 720px;
+  }
 
+  .offer-image{
+    margin: 0 auto 0;
   }
 }

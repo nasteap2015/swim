@@ -1,0 +1,32 @@
+.container.advantages{
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages-list-wrapper{
+  width: 335px;
+}
+
+.advantages-heading{
+  margin: 0 auto 24px;
+}
+
+.advantages-list-item-heading{
+  margin-bottom: 16px;
+}
+
+.advantages-list-item-description{
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px){
+  .advantages-list-wrapper {
+      width: 704px;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .advantages-list-wrapper {
+        width: 1180px;
+      }
+}

@@ -1,0 +1,20 @@
+.container.price{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.table-wrapper{
+  width: 335px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+@media screen and (min-width: 768px){
+  .table-wrapper{
+    width: 708px;
+  }
+}
