@@ -1,5 +1,5 @@
 .about-wrapper{
-  width: 335px;
+  width: 355px;
   border-radius: 24px;
   background: #FBFBFB;
   margin-right: auto;
@@ -16,6 +16,10 @@
   flex-direction: column;
   gap: 20px;
 
+}
+
+.about-text{
+  text-align: justify;
 }
 
 .img-about-me{
